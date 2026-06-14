@@ -22,10 +22,15 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
-
+  
+console.log("Firebase Loaded");
+  
 const landslideRef = ref(db, "landslide");
-
+  
+console.log("Listening to Firebase");
+  
 onValue(landslideRef, (snapshot) => {
+  
   const data = snapshot.val();
 
   if (!data) return;
