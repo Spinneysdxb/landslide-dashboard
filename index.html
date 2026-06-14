@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landslide Monitoring System</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f2f2f2;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:15px;
+    margin:10px 0;
+    border-radius:10px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+}
+
+.value{
+    font-size:24px;
+    font-weight:bold;
+}
+
+.safe{
+    color:green;
+}
+
+.alert{
+    color:red;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🌍 Landslide Monitoring System</h1>
+
+<div class="card">
+    <h2>Status</h2>
+    <div id="status" class="value">Loading...</div>
+</div>
+
+<div class="card">
+    <h2>Risk Score</h2>
+    <div id="risk" class="value">0</div>
+</div>
+
+<div class="card">
+    <h2>Soil 1</h2>
+    <div id="soil1" class="value">0</div>
+</div>
+
+<div class="card">
+    <h2>Soil 2</h2>
+    <div id="soil2" class="value">0</div>
+</div>
+
+<div class="card">
+    <h2>FSR</h2>
+    <div id="fsr" class="value">0</div>
+</div>
+
+<div class="card">
+    <h2>Pitch</h2>
+    <div id="pitch" class="value">0</div>
+</div>
+
+<div class="card">
+    <h2>Roll</h2>
+    <div id="roll" class="value">0</div>
+</div>
+
+<p style="text-align:center;">
+Firebase connection will be added next.
+</p>
+
+</body>
+</html>
